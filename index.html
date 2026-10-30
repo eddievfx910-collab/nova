@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NOVA TECH — premium electronics, smart devices, and gadgets for everyday life."
+    />
+    <title>NOVA TECH | Next-Gen Electronics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" aria-label="Main navigation">
+        <nav class="navbar container" aria-label="Primary navigation">
+          <a href="#home" class="brand" aria-label="NOVA TECH home">
+            <span class="brand-mark">N</span>
+            <span class="brand-text">NOVA TECH</span>
+          </a>
+
+          <div class="search-wrap desktop-only" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10.5 3a7.5 7.5 0 015.996 12.804l4.38 4.38 1.414-1.414-4.38-4.38A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 104.001 9.001A5.5 5.5 0 0010.5 5z" />
+            </svg>
+            <input id="searchInput" type="search" placeholder="Search gadgets, accessories..." aria-label="Search products" />
+          </div>
+
+          <div class="nav-actions">
+            <button class="icon-button nav-icon" type="button" aria-label="Wishlist">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5A4.5 4.5 0 016.5 4c1.74 0 3.41.81 4.5 2.09A6.13 6.13 0 0115.5 4 4.5 4.5 0 0120 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+              <span class="sr-only">Wishlist</span>
+            </button>
+
+            <button id="cartToggle" class="icon-button cart-button" type="button" aria-label="Open shopping cart" aria-expanded="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 4h2l2.2 9.2a1 1 0 001 .8h8.9a1 1 0 001-.76L19 7H7.2l-.4-2.1A1 1 0 005.8 4H3zm5 15a1.8 1.8 0 100 3.6A1.8 1.8 0 008 19zm8 0a1.8 1.8 0 100 3.6A1.8 1.8 0 0016 19z" />
+              </svg>
+              <span id="cartCount" class="cart-badge">0</span>
+            </button>
+
+            <button class="primary-btn sign-in" type="button" onclick="window.location.href='login.html'">Sign In</button>
+
+            <div class="user-menu-wrap" data-user-menu hidden>
+              <button class="user-trigger" type="button" aria-label="Open user menu">
+                <span class="user-avatar-small" data-user-avatar>U</span>
+                <span data-user-name>Account</span>
+              </button>
+              <div class="user-dropdown" role="menu" aria-label="User actions">
+                <a href="account.html" role="menuitem">My Account</a>
+                <a href="account.html" role="menuitem">Orders</a>
+                <button type="button" id="logoutButton" role="menuitem">Logout</button>
+              </div>
+            </div>
+
+            <button id="mobileMenuToggle" class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <div id="mobileMenu" class="nav-links mobile-menu" aria-label="Mobile menu">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#categories">Categories</a>
+            <a href="#deals">Deals</a>
+            <a href="#about">About</a>
+          </div>
+        </nav>
+
+        <nav class="navbar nav-links desktop-nav container" aria-label="Main menu">
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#categories">Categories</a>
+          <a href="#deals">Deals</a>
+          <a href="#about">About</a>
+        </nav>
+      </header>
+
+      <main id="home">
+        <section class="hero-section container">
+          <div class="hero-copy">
+            <div class="eyebrow">Next-Gen Living</div>
+            <h1>Future-ready gadgets for smarter everyday moments.</h1>
+            <p>
+              Discover premium tech essentials, immersive audio, AI-powered devices, and sleek accessories built to move with you.
+            </p>
+            <div class="hero-actions">
+              <a href="#shop" class="primary-btn">Shop Now</a>
+              <a href="#deals" class="secondary-btn">Explore Deals</a>
+            </div>
+            <ul class="hero-stats" aria-label="Store statistics">
+              <li><strong>12k+</strong><span>Happy Customers</span></li>
+              <li><strong>4.9/5</strong><span>Rated Experience</span></li>
+              <li><strong>2-day</strong><span>Fast Shipping</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Illustrated electronics showcase">
+            <div class="glow glow-one"></div>
+            <div class="glow glow-two"></div>
+            <div class="device device-laptop">
+              <div class="device-screen">
+                <div class="screen-bar"></div>
+                <div class="screen-glow"></div>
+              </div>
+            </div>
+            <div class="device device-phone">
+              <div class="phone-screen"></div>
+            </div>
+            <div class="device device-watch">
+              <div class="watch-face"></div>
+            </div>
+            <div class="floating-card card-a">
+              <span>AI Audio</span>
+              <strong>Ultra Sound</strong>
+            </div>
+            <div class="floating-card card-b">
+              <span>Battery</span>
+              <strong>72h</strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="categories" class="categories-section container" aria-labelledby="categories-title">
+          <div class="section-heading">
+            <div class="eyebrow">Shop by category</div>
+            <h2 id="categories-title">Explore our featured categories</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card">
+              <div class="category-icon blue">📱</div>
+              <h3>Smartphones</h3>
+            </article>
+            <article class="category-card">
+              <div class="category-icon purple">💻</div>
+              <h3>Laptops</h3>
+            </article>
+            <article class="category-card">
+              <div class="category-icon pink">🎧</div>
+              <h3>Audio</h3>
+            </article>
+            <article class="category-card">
+              <div class="category-icon teal">⌚</div>
+              <h3>Wearables</h3>
+            </article>
+            <article class="category-card">
+              <div class="category-icon amber">🎮</div>
+              <h3>Gaming</h3>
+            </article>
+            <article class="category-card">
+              <div class="category-icon green">🏠</div>
+              <h3>Smart Home</h3>
+            </article>
+            <article class="category-card">
+              <div class="category-icon violet">🔌</div>
+              <h3>Accessories</h3>
+            </article>
+          </div>
+        </section>
+
+        <section id="shop" class="products-section container" aria-labelledby="products-title">
+          <div class="section-heading products-head">
+            <div>
+              <div class="eyebrow">Curated collection</div>
+              <h2 id="products-title">Trending products</h2>
+            </div>
+            <div class="product-filters" aria-label="Product filters">
+              <label>
+                <span class="sr-only">Filter by category</span>
+                <select id="categoryFilter" aria-label="Filter by category">
+                  <option value="all">All Categories</option>
+                  <option value="Smartphones">Smartphones</option>
+                  <option value="Laptops">Laptops</option>
+                  <option value="Audio">Audio</option>
+                  <option value="Wearables">Wearables</option>
+                  <option value="Gaming">Gaming</option>
+                  <option value="Smart Home">Smart Home</option>
+                  <option value="Accessories">Accessories</option>
+                </select>
+              </label>
+              <label>
+                <span class="sr-only">Sort products</span>
+                <select id="sortFilter" aria-label="Sort products">
+                  <option value="featured">Featured</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="popular">Popularity</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="deals" class="promo-banner container" aria-labelledby="promo-title">
+          <div class="promo-copy">
+            <div class="eyebrow">Limited-time offer</div>
+            <h2 id="promo-title">Save up to 40% on premium gadgets this week.</h2>
+            <p>Upgrade your workspace and lifestyle with powerful tech at irresistible prices.</p>
+          </div>
+          <div class="countdown" aria-label="Countdown timer">
+            <div class="countdown-item">
+              <span id="days">00</span>
+              <small>Days</small>
+            </div>
+            <div class="countdown-item">
+              <span id="hours">00</span>
+              <small>Hours</small>
+            </div>
+            <div class="countdown-item">
+              <span id="minutes">00</span>
+              <small>Minutes</small>
+            </div>
+            <div class="countdown-item">
+              <span id="seconds">00</span>
+              <small>Seconds</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonials-section container" aria-labelledby="reviews-title">
+          <div class="section-heading">
+            <div class="eyebrow">Customer love</div>
+            <h2 id="reviews-title">What shoppers are saying</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <div class="stars" aria-label="Five star review">★★★★★</div>
+              <p>“The device quality feels premium, and the shipping was faster than expected. Everything feels thoughtfully designed.”</p>
+              <div class="reviewer">
+                <div class="avatar">AM</div>
+                <div>
+                  <strong>Alicia M.</strong>
+                  <span>Verified Buyer</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars" aria-label="Five star review">★★★★★</div>
+              <p>“I upgraded my home setup with the smart speakers and accessories. The experience is seamless and beautifully engineered.”</p>
+              <div class="reviewer">
+                <div class="avatar">JT</div>
+                <div>
+                  <strong>Jordan T.</strong>
+                  <span>Home Tech Lover</span>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <div class="stars" aria-label="Five star review">★★★★★</div>
+              <p>“The product variety is excellent. I found a new laptop and headphones that fit my budget and daily workflow perfectly.”</p>
+              <div class="reviewer">
+                <div class="avatar">RN</div>
+                <div>
+                  <strong>Renee N.</strong>
+                  <span>Creative Professional</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="newsletter-section container" aria-labelledby="newsletter-title">
+          <div class="newsletter-card">
+            <div>
+              <div class="eyebrow">Stay in the loop</div>
+              <h2 id="newsletter-title">Get the latest tech drops and exclusive offers.</h2>
+            </div>
+            <form id="newsletterForm" novalidate>
+              <label class="sr-only" for="newsletterEmail">Email address</label>
+              <input id="newsletterEmail" type="email" placeholder="Enter your email" aria-describedby="newsletterMessage" />
+              <button type="submit" class="primary-btn">Join Now</button>
+            </form>
+            <p id="newsletterMessage" class="newsletter-message" aria-live="polite"></p>
+          </div>
+        </section>
+
+        <section class="contact-section container" aria-labelledby="contact-title">
+          <div class="contact-card">
+            <div class="section-heading compact">
+              <div class="eyebrow">Need help?</div>
+              <h2 id="contact-title">Send us a message</h2>
+            </div>
+            <form id="contactMessageForm" class="contact-form">
+              <div class="field-row two-col">
+                <label>
+                  <span>Name</span>
+                  <input type="text" id="contactName" name="name" placeholder="Your name" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" id="contactEmail" name="email" placeholder="you@example.com" required />
+                </label>
+              </div>
+              <label>
+                <span>Message</span>
+                <textarea id="contactMessageText" name="message" rows="4" placeholder="Tell us how we can help..." required></textarea>
+              </label>
+              <button type="submit" class="primary-btn">Send Message</button>
+            </form>
+            <p id="contactFeedback" class="contact-feedback" aria-live="polite"></p>
+          </div>
+        </section>
+      </main>
+
+      <footer id="about" class="site-footer">
+        <div class="container footer-grid">
+          <div class="footer-brand-block">
+            <a href="#home" class="brand footer-brand" aria-label="NOVA TECH home">
+              <span class="brand-mark">N</span>
+              <span class="brand-text">NOVA TECH</span>
+            </a>
+            <p>Elevating your digital lifestyle with smarter, cleaner, and more connected tech.</p>
+            <div class="social-links" aria-label="Social media links">
+              <a href="#" aria-label="Instagram">◎</a>
+              <a href="#" aria-label="X">𝕏</a>
+              <a href="#" aria-label="YouTube">▶</a>
+              <a href="#" aria-label="LinkedIn">in</a>
+            </div>
+          </div>
+
+          <div>
+            <h3>Shop</h3>
+            <ul>
+              <li><a href="#shop">New Arrivals</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#deals">Deals</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Warranty</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <p>© 2026 NOVA TECH. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <aside id="cartDrawer" class="cart-drawer" aria-labelledby="cartTitle" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Your cart</p>
+          <h3 id="cartTitle">Shopping bag</h3>
+        </div>
+        <button id="closeCart" class="close-btn" type="button" aria-label="Close cart">✕</button>
+      </div>
+
+      <div id="cartItems" class="cart-items" aria-live="polite"></div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="subtotalValue">$0.00</strong>
+        </div>
+        <button type="button" class="primary-btn checkout-btn">Checkout</button>
+      </div>
+    </aside>
+
+    <div id="cartOverlay" class="cart-overlay" tabindex="-1" aria-hidden="true"></div>
+
+    <div id="productModal" class="product-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-backdrop" data-close="modal"></div>
+      <div class="modal-dialog" tabindex="0">
+        <button type="button" class="close-btn modal-close" aria-label="Close product modal">✕</button>
+        <div class="modal-content">
+          <div class="modal-media">
+            <img id="modalImage" src="" alt="Product preview" />
+          </div>
+          <div class="modal-copy">
+            <span id="modalBadge" class="product-badge">New</span>
+            <h3 id="modalTitle">Product name</h3>
+            <div class="modal-rating">
+              <span aria-label="Product rating">★★★★★</span>
+              <small id="modalReviews">(128 reviews)</small>
+            </div>
+            <div class="modal-price-row">
+              <strong id="modalPrice">$0.00</strong>
+              <span id="modalOriginalPrice" class="original-price">$0.00</span>
+            </div>
+            <p id="modalDescription" class="modal-description"></p>
+
+            <div class="option-group">
+              <span>Color</span>
+              <div id="modalColors" class="option-pills"></div>
+            </div>
+
+            <div class="option-group">
+              <span>Storage</span>
+              <div id="modalStorages" class="option-pills"></div>
+            </div>
+
+            <div class="modal-actions">
+              <div class="quantity-picker" aria-label="Quantity selector">
+                <button type="button" class="qty-btn" data-action="decrease-qty" aria-label="Decrease quantity">−</button>
+                <span id="modalQuantity">1</span>
+                <button type="button" class="qty-btn" data-action="increase-qty" aria-label="Increase quantity">+</button>
+              </div>
+              <button id="modalAddToCart" type="button" class="primary-btn">Add to Cart</button>
+            </div>
+
+            <div class="question-group">
+              <label for="productQuestionInput">Ask about this product</label>
+              <textarea id="productQuestionInput" rows="3" placeholder="Do you have a question about this device?"></textarea>
+              <button id="productQuestionBtn" type="button" class="secondary-btn">Ask a Question</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
